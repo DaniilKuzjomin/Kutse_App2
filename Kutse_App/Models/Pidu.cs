@@ -10,10 +10,12 @@ namespace Kutse_App.Models
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Sisesta nimi")]
+        [Display(Name = "Pidu nimi")]
         public string Name { get; set; }
 
         
         [Required(ErrorMessage = "Sisesta kuupaev")]
+        [Display(Name = "Kuupäev")]
         public DateTime Date { get; set; }
 
     }
